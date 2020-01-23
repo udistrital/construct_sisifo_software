@@ -1,19 +1,22 @@
 version: '2'
 services:
-  odoo:
-    image: odoo:9
-    restart: always
-    ports:
-      - "8069:8069"
-    links:
-      - db
-    volumes:
-    #  - ./odoo-web-data:/var/lib/odoo
-      - ./config:/etc/odoo
-      - ./extra-addons:/mnt/extra-addons
-  db:
+  odoo-db:
     image: postgres:9.4
-    restart: always
     environment:
       - POSTGRES_USER=odoo
       - POSTGRES_PASSWORD=odoo
+    ports:
+      - "5432"
+  odoo_v9:
+    build:
+        context: odoo_v9
+        dockerfile: Dockerfile
+    ports:
+      - "8069:8069"
+    depends_on:
+      - odoo-db
+    volumes:
+     - ./extra-addons:/opt/addons/
+     - ./odoo_v9/logs/odoo:/var/log/odoo/
+     - ./odoo_v9/logs/supervisor:/var/log/supervisor
+     - ./odoo_v9/attachments/data:/opt/odoo-attachments/data/
