@@ -1,4 +1,4 @@
-# construct_mspi_software
+# construct_sisifo_software
 Este repositorio contiene una serie de script para dockerizar el proyecto [mspi-software](https://github.com/jjvargass/mspi-software)
 
 
