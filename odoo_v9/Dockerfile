@@ -27,7 +27,7 @@ RUN apt-get update && \
     python-openid python-openssl python-passlib python-psutil python-psycopg2 \
     python-pychart python-pydot python-pyinotify python-pyparsing python-pypdf \
     python-renderpm python-reportlab python-reportlab-accel python-suds \
-    python-support python-vatnumber python-vobject python-werkzeug python-xlwt \
+    python-support python-vatnumber python-vobject python-werkzeug python-xlwt duplicity \
     python-yaml shared-mime-info x11-common python-gevent python-gevent-websocket && \
 # Clean APT temporary files
     apt-get clean && \
