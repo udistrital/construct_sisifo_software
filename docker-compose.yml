@@ -6,7 +6,7 @@ services:
       - POSTGRES_USER=odoo
       - POSTGRES_PASSWORD=odoo
     ports:
-      - "5432"
+      - "5432:5432"
   odoo_v9:
     build:
         context: odoo_v9
