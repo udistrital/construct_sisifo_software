@@ -1,5 +1,5 @@
 # construct_sisifo_software
-Este repositorio contiene una serie de script para dockerizar el proyecto [mspi-software](https://github.com/jjvargass/mspi-software)
+Este repositorio contiene una serie de script para dockerizar el proyecto SISIFO UD
 
 
 
@@ -15,9 +15,9 @@ docker-compose up
 
 ## Licencia
 
-This file is part of construct_mspi_software.
+This file is part of construct_sisfo_software.
 
-construct_mspi_software is free software: you can redistribute it and/or modify
+construct_sisifo_software is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
