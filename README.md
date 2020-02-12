@@ -15,7 +15,7 @@ docker-compose up
 
 ## Licencia
 
-This file is part of construct_sisfo_software.
+This file is part of construct_sisifo_software.
 
 construct_sisifo_software is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
